@@ -1,0 +1,402 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1F02C5F91A16FE0D00CC70A3 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F02C5F81A16FE0D00CC70A3 /* SystemConfiguration.framework */; };
+		1F02C5FB1A16FE1500CC70A3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F02C5FA1A16FE1500CC70A3 /* Foundation.framework */; };
+		1F1EFD831A17380A00D11FDB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F1EFD781A17380A00D11FDB /* AppDelegate.m */; };
+		1F1EFD841A17380A00D11FDB /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1F1EFD791A17380A00D11FDB /* MainWindow.xib */; };
+		1F1EFD851A17380A00D11FDB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F1EFD7B1A17380A00D11FDB /* main.m */; };
+		1F1EFD861A17380A00D11FDB /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1F1EFD7C1A17380A00D11FDB /* MainMenu.xib */; };
+		1F1EFD881A17380A00D11FDB /* MainWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F1EFD801A17380A00D11FDB /* MainWindowController.m */; };
+		1F1EFD891A17380A00D11FDB /* NSLengthFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F1EFD821A17380A00D11FDB /* NSLengthFormatter.m */; };
+		1F1EFD901A17381100D11FDB /* bash_get_ip.sh in Resources */ = {isa = PBXBuildFile; fileRef = 1F1EFD8B1A17381100D11FDB /* bash_get_ip.sh */; };
+		1F1EFD911A17381100D11FDB /* bash_restart_transmission.sh in Resources */ = {isa = PBXBuildFile; fileRef = 1F1EFD8C1A17381100D11FDB /* bash_restart_transmission.sh */; };
+		1F1EFD921A17381100D11FDB /* bash_write_ip.sh in Resources */ = {isa = PBXBuildFile; fileRef = 1F1EFD8D1A17381100D11FDB /* bash_write_ip.sh */; };
+		1F1EFD931A17381100D11FDB /* checkip.torrent in Resources */ = {isa = PBXBuildFile; fileRef = 1F1EFD8E1A17381100D11FDB /* checkip.torrent */; };
+		1F1EFD941A17381100D11FDB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F1EFD8F1A17381100D11FDB /* Images.xcassets */; };
+		1F246F1F1A1B0CFF00A0AAB1 /* TIBInterfaceWatcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F246F1E1A1B0CFF00A0AAB1 /* TIBInterfaceWatcher.m */; };
+		1F246F221A1B15D600A0AAB1 /* TIBTransmissionAutoKiller.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F246F211A1B15D600A0AAB1 /* TIBTransmissionAutoKiller.m */; };
+		1F246F251A1B194500A0AAB1 /* TIBScripter.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F246F241A1B194500A0AAB1 /* TIBScripter.m */; };
+		1F3668211A1AF049000062BC /* com.onepixeldev.Transmission-Interface-Binder.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1F3668201A1AF049000062BC /* com.onepixeldev.Transmission-Interface-Binder.plist */; };
+		1F3668241A1AF599000062BC /* TIBOnLogin.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F3668231A1AF599000062BC /* TIBOnLogin.m */; };
+		1F709E431A185C2C00419B87 /* transmission_autokiller.sh in Resources */ = {isa = PBXBuildFile; fileRef = 1F709E421A185C2C00419B87 /* transmission_autokiller.sh */; };
+		1FBF96991A187BB500475E86 /* transmission_is_closed.sh in Resources */ = {isa = PBXBuildFile; fileRef = 1FBF96981A187BB500475E86 /* transmission_is_closed.sh */; };
+		1FC8F78E1A19CFB900C5605C /* icon-128.png in Resources */ = {isa = PBXBuildFile; fileRef = 1FC8F78A1A19CFB900C5605C /* icon-128.png */; };
+		1FC8F78F1A19CFB900C5605C /* icon-256.png in Resources */ = {isa = PBXBuildFile; fileRef = 1FC8F78B1A19CFB900C5605C /* icon-256.png */; };
+		1FC8F7901A19CFB900C5605C /* icon-512.png in Resources */ = {isa = PBXBuildFile; fileRef = 1FC8F78C1A19CFB900C5605C /* icon-512.png */; };
+		1FC8F7911A19CFB900C5605C /* icon-1024.png in Resources */ = {isa = PBXBuildFile; fileRef = 1FC8F78D1A19CFB900C5605C /* icon-1024.png */; };
+		1FECCF081A1A84A0007D79DD /* TIBAlertWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FECCF061A1A84A0007D79DD /* TIBAlertWindowController.m */; };
+		1FECCF091A1A84A0007D79DD /* TIBAlertWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1FECCF071A1A84A0007D79DD /* TIBAlertWindowController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1F02C5D01A16F1AD00CC70A3 /* Transmission Interface Binder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Transmission Interface Binder.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1F02C5F81A16FE0D00CC70A3 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		1F02C5FA1A16FE1500CC70A3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		1F1EFD771A17380A00D11FDB /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		1F1EFD781A17380A00D11FDB /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		1F1EFD7A1A17380A00D11FDB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainWindow.xib; sourceTree = "<group>"; };
+		1F1EFD7B1A17380A00D11FDB /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		1F1EFD7C1A17380A00D11FDB /* MainMenu.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainMenu.xib; sourceTree = "<group>"; };
+		1F1EFD7F1A17380A00D11FDB /* MainWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainWindowController.h; sourceTree = "<group>"; };
+		1F1EFD801A17380A00D11FDB /* MainWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainWindowController.m; sourceTree = "<group>"; };
+		1F1EFD811A17380A00D11FDB /* NSLengthFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSLengthFormatter.h; sourceTree = "<group>"; };
+		1F1EFD821A17380A00D11FDB /* NSLengthFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSLengthFormatter.m; sourceTree = "<group>"; };
+		1F1EFD8B1A17381100D11FDB /* bash_get_ip.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = bash_get_ip.sh; sourceTree = "<group>"; };
+		1F1EFD8C1A17381100D11FDB /* bash_restart_transmission.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = bash_restart_transmission.sh; sourceTree = "<group>"; };
+		1F1EFD8D1A17381100D11FDB /* bash_write_ip.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = bash_write_ip.sh; sourceTree = "<group>"; };
+		1F1EFD8E1A17381100D11FDB /* checkip.torrent */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = checkip.torrent; sourceTree = "<group>"; };
+		1F1EFD8F1A17381100D11FDB /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		1F1EFD961A17381900D11FDB /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1F246F1D1A1B0CFF00A0AAB1 /* TIBInterfaceWatcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TIBInterfaceWatcher.h; sourceTree = "<group>"; };
+		1F246F1E1A1B0CFF00A0AAB1 /* TIBInterfaceWatcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TIBInterfaceWatcher.m; sourceTree = "<group>"; };
+		1F246F201A1B15D600A0AAB1 /* TIBTransmissionAutoKiller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TIBTransmissionAutoKiller.h; sourceTree = "<group>"; };
+		1F246F211A1B15D600A0AAB1 /* TIBTransmissionAutoKiller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TIBTransmissionAutoKiller.m; sourceTree = "<group>"; };
+		1F246F231A1B194500A0AAB1 /* TIBScripter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TIBScripter.h; sourceTree = "<group>"; };
+		1F246F241A1B194500A0AAB1 /* TIBScripter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TIBScripter.m; sourceTree = "<group>"; };
+		1F3668201A1AF049000062BC /* com.onepixeldev.Transmission-Interface-Binder.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "com.onepixeldev.Transmission-Interface-Binder.plist"; sourceTree = "<group>"; };
+		1F3668221A1AF599000062BC /* TIBOnLogin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TIBOnLogin.h; sourceTree = "<group>"; };
+		1F3668231A1AF599000062BC /* TIBOnLogin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TIBOnLogin.m; sourceTree = "<group>"; };
+		1F709E421A185C2C00419B87 /* transmission_autokiller.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = transmission_autokiller.sh; sourceTree = "<group>"; };
+		1FBF96981A187BB500475E86 /* transmission_is_closed.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = transmission_is_closed.sh; sourceTree = "<group>"; };
+		1FC8F78A1A19CFB900C5605C /* icon-128.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-128.png"; sourceTree = "<group>"; };
+		1FC8F78B1A19CFB900C5605C /* icon-256.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-256.png"; sourceTree = "<group>"; };
+		1FC8F78C1A19CFB900C5605C /* icon-512.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-512.png"; sourceTree = "<group>"; };
+		1FC8F78D1A19CFB900C5605C /* icon-1024.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-1024.png"; sourceTree = "<group>"; };
+		1FECCF051A1A84A0007D79DD /* TIBAlertWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TIBAlertWindowController.h; sourceTree = "<group>"; };
+		1FECCF061A1A84A0007D79DD /* TIBAlertWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TIBAlertWindowController.m; sourceTree = "<group>"; };
+		1FECCF071A1A84A0007D79DD /* TIBAlertWindowController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TIBAlertWindowController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1F02C5CD1A16F1AD00CC70A3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F02C5FB1A16FE1500CC70A3 /* Foundation.framework in Frameworks */,
+				1F02C5F91A16FE0D00CC70A3 /* SystemConfiguration.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1F02C5C71A16F1AD00CC70A3 = {
+			isa = PBXGroup;
+			children = (
+				1F1EFD761A17380A00D11FDB /* Classes */,
+				1F1EFD8A1A17381100D11FDB /* Resources */,
+				1F1EFD951A17381900D11FDB /* Supporting Files */,
+				1F02C5FC1A16FE1D00CC70A3 /* Frameworks */,
+				1F02C5D11A16F1AD00CC70A3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1F02C5D11A16F1AD00CC70A3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1F02C5D01A16F1AD00CC70A3 /* Transmission Interface Binder.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1F02C5FC1A16FE1D00CC70A3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1F02C5FA1A16FE1500CC70A3 /* Foundation.framework */,
+				1F02C5F81A16FE0D00CC70A3 /* SystemConfiguration.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1F1EFD761A17380A00D11FDB /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				1F1EFD7B1A17380A00D11FDB /* main.m */,
+				1F1EFD771A17380A00D11FDB /* AppDelegate.h */,
+				1F1EFD781A17380A00D11FDB /* AppDelegate.m */,
+				1F1EFD7C1A17380A00D11FDB /* MainMenu.xib */,
+				1F1EFD7F1A17380A00D11FDB /* MainWindowController.h */,
+				1F1EFD801A17380A00D11FDB /* MainWindowController.m */,
+				1F1EFD791A17380A00D11FDB /* MainWindow.xib */,
+				1FECCF051A1A84A0007D79DD /* TIBAlertWindowController.h */,
+				1FECCF061A1A84A0007D79DD /* TIBAlertWindowController.m */,
+				1FECCF071A1A84A0007D79DD /* TIBAlertWindowController.xib */,
+				1F246F1D1A1B0CFF00A0AAB1 /* TIBInterfaceWatcher.h */,
+				1F246F1E1A1B0CFF00A0AAB1 /* TIBInterfaceWatcher.m */,
+				1F246F201A1B15D600A0AAB1 /* TIBTransmissionAutoKiller.h */,
+				1F246F211A1B15D600A0AAB1 /* TIBTransmissionAutoKiller.m */,
+				1F3668221A1AF599000062BC /* TIBOnLogin.h */,
+				1F3668231A1AF599000062BC /* TIBOnLogin.m */,
+				1F246F231A1B194500A0AAB1 /* TIBScripter.h */,
+				1F246F241A1B194500A0AAB1 /* TIBScripter.m */,
+				1F1EFD811A17380A00D11FDB /* NSLengthFormatter.h */,
+				1F1EFD821A17380A00D11FDB /* NSLengthFormatter.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		1F1EFD8A1A17381100D11FDB /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				1F3668201A1AF049000062BC /* com.onepixeldev.Transmission-Interface-Binder.plist */,
+				1FC8F78A1A19CFB900C5605C /* icon-128.png */,
+				1FC8F78B1A19CFB900C5605C /* icon-256.png */,
+				1FC8F78C1A19CFB900C5605C /* icon-512.png */,
+				1FC8F78D1A19CFB900C5605C /* icon-1024.png */,
+				1FBF96981A187BB500475E86 /* transmission_is_closed.sh */,
+				1F709E421A185C2C00419B87 /* transmission_autokiller.sh */,
+				1F1EFD8B1A17381100D11FDB /* bash_get_ip.sh */,
+				1F1EFD8C1A17381100D11FDB /* bash_restart_transmission.sh */,
+				1F1EFD8D1A17381100D11FDB /* bash_write_ip.sh */,
+				1F1EFD8E1A17381100D11FDB /* checkip.torrent */,
+				1F1EFD8F1A17381100D11FDB /* Images.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		1F1EFD951A17381900D11FDB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1F1EFD961A17381900D11FDB /* Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1F02C5CF1A16F1AD00CC70A3 /* Transmission Interface Binder */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1F02C5ED1A16F1AD00CC70A3 /* Build configuration list for PBXNativeTarget "Transmission Interface Binder" */;
+			buildPhases = (
+				1F02C5CC1A16F1AD00CC70A3 /* Sources */,
+				1F02C5CD1A16F1AD00CC70A3 /* Frameworks */,
+				1F02C5CE1A16F1AD00CC70A3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Transmission Interface Binder";
+			productName = "Transmission Tunneler";
+			productReference = 1F02C5D01A16F1AD00CC70A3 /* Transmission Interface Binder.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1F02C5C81A16F1AD00CC70A3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0600;
+				ORGANIZATIONNAME = "Josh Bernfeld";
+				TargetAttributes = {
+					1F02C5CF1A16F1AD00CC70A3 = {
+						CreatedOnToolsVersion = 6.0;
+					};
+				};
+			};
+			buildConfigurationList = 1F02C5CB1A16F1AD00CC70A3 /* Build configuration list for PBXProject "Transmission Interface Binder" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1F02C5C71A16F1AD00CC70A3;
+			productRefGroup = 1F02C5D11A16F1AD00CC70A3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1F02C5CF1A16F1AD00CC70A3 /* Transmission Interface Binder */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1F02C5CE1A16F1AD00CC70A3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F1EFD911A17381100D11FDB /* bash_restart_transmission.sh in Resources */,
+				1F1EFD921A17381100D11FDB /* bash_write_ip.sh in Resources */,
+				1F1EFD941A17381100D11FDB /* Images.xcassets in Resources */,
+				1F1EFD841A17380A00D11FDB /* MainWindow.xib in Resources */,
+				1FC8F78E1A19CFB900C5605C /* icon-128.png in Resources */,
+				1FC8F7901A19CFB900C5605C /* icon-512.png in Resources */,
+				1F709E431A185C2C00419B87 /* transmission_autokiller.sh in Resources */,
+				1FC8F78F1A19CFB900C5605C /* icon-256.png in Resources */,
+				1F3668211A1AF049000062BC /* com.onepixeldev.Transmission-Interface-Binder.plist in Resources */,
+				1FECCF091A1A84A0007D79DD /* TIBAlertWindowController.xib in Resources */,
+				1F1EFD861A17380A00D11FDB /* MainMenu.xib in Resources */,
+				1FBF96991A187BB500475E86 /* transmission_is_closed.sh in Resources */,
+				1F1EFD931A17381100D11FDB /* checkip.torrent in Resources */,
+				1F1EFD901A17381100D11FDB /* bash_get_ip.sh in Resources */,
+				1FC8F7911A19CFB900C5605C /* icon-1024.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1F02C5CC1A16F1AD00CC70A3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F246F251A1B194500A0AAB1 /* TIBScripter.m in Sources */,
+				1F3668241A1AF599000062BC /* TIBOnLogin.m in Sources */,
+				1F1EFD891A17380A00D11FDB /* NSLengthFormatter.m in Sources */,
+				1F246F1F1A1B0CFF00A0AAB1 /* TIBInterfaceWatcher.m in Sources */,
+				1F246F221A1B15D600A0AAB1 /* TIBTransmissionAutoKiller.m in Sources */,
+				1F1EFD851A17380A00D11FDB /* main.m in Sources */,
+				1FECCF081A1A84A0007D79DD /* TIBAlertWindowController.m in Sources */,
+				1F1EFD831A17380A00D11FDB /* AppDelegate.m in Sources */,
+				1F1EFD881A17380A00D11FDB /* MainWindowController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		1F1EFD791A17380A00D11FDB /* MainWindow.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1F1EFD7A1A17380A00D11FDB /* Base */,
+			);
+			name = MainWindow.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1F02C5EB1A16F1AD00CC70A3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		1F02C5EC1A16F1AD00CC70A3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		1F02C5EE1A16F1AD00CC70A3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "Supporting Files/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_NAME = "Transmission Interface Binder";
+			};
+			name = Debug;
+		};
+		1F02C5EF1A16F1AD00CC70A3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "Supporting Files/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_NAME = "Transmission Interface Binder";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1F02C5CB1A16F1AD00CC70A3 /* Build configuration list for PBXProject "Transmission Interface Binder" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1F02C5EB1A16F1AD00CC70A3 /* Debug */,
+				1F02C5EC1A16F1AD00CC70A3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1F02C5ED1A16F1AD00CC70A3 /* Build configuration list for PBXNativeTarget "Transmission Interface Binder" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1F02C5EE1A16F1AD00CC70A3 /* Debug */,
+				1F02C5EF1A16F1AD00CC70A3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1F02C5C81A16F1AD00CC70A3 /* Project object */;
+}

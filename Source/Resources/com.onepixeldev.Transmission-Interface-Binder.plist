@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Label</key>
+	<string>com.onepixeldev.Transmission-Interface-Binder</string>
+	<key>ProgramArguments</key>
+	<array>
+		<string>open</string>
+		<string>-a</string>
+		<string>Transmission Interface Binder</string>
+		<string>--args</string>
+		<string>-s</string>
+		<string></string>
+	</array>
+	<key>RunAtLoad</key>
+	<true/>
+</dict>
+</plist>
