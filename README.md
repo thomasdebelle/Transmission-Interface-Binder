@@ -20,7 +20,7 @@ If you attempt to open Transmission while your VPN is not running, a warning mes
 
 ![alt tag](https://raw.githubusercontent.com/joshbernfeld/Transmission-Interface-Binder/master/Preview/alert.png)
 
-**If I disconnect from my VPN while Transmission is open and seeding will revert to my default network?**
+**If I disconnect from my VPN while Transmission is open and seeding will traffic revert to my default network?**
 
 **No.** When Transmission first starts it will bind to the IP address of your selected interface. If that IP address and interface disappear, it will stay bound to it but no traffic will pass through. You will see your seeders disconnect and any outgoing connections dropped.
 
