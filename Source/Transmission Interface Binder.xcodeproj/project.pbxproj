@@ -31,6 +31,7 @@
 		1FC8F78F1A19CFB900C5605C /* icon-256.png in Resources */ = {isa = PBXBuildFile; fileRef = 1FC8F78B1A19CFB900C5605C /* icon-256.png */; };
 		1FC8F7901A19CFB900C5605C /* icon-512.png in Resources */ = {isa = PBXBuildFile; fileRef = 1FC8F78C1A19CFB900C5605C /* icon-512.png */; };
 		1FC8F7911A19CFB900C5605C /* icon-1024.png in Resources */ = {isa = PBXBuildFile; fileRef = 1FC8F78D1A19CFB900C5605C /* icon-1024.png */; };
+		1FE961461A1B3E8E00020F00 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 1FE961451A1B3E8E00020F00 /* README.md */; };
 		1FECCF081A1A84A0007D79DD /* TIBAlertWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FECCF061A1A84A0007D79DD /* TIBAlertWindowController.m */; };
 		1FECCF091A1A84A0007D79DD /* TIBAlertWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1FECCF071A1A84A0007D79DD /* TIBAlertWindowController.xib */; };
 /* End PBXBuildFile section */
@@ -69,6 +70,7 @@
 		1FC8F78B1A19CFB900C5605C /* icon-256.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-256.png"; sourceTree = "<group>"; };
 		1FC8F78C1A19CFB900C5605C /* icon-512.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-512.png"; sourceTree = "<group>"; };
 		1FC8F78D1A19CFB900C5605C /* icon-1024.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-1024.png"; sourceTree = "<group>"; };
+		1FE961451A1B3E8E00020F00 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../../README.md; sourceTree = "<group>"; };
 		1FECCF051A1A84A0007D79DD /* TIBAlertWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TIBAlertWindowController.h; sourceTree = "<group>"; };
 		1FECCF061A1A84A0007D79DD /* TIBAlertWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TIBAlertWindowController.m; sourceTree = "<group>"; };
 		1FECCF071A1A84A0007D79DD /* TIBAlertWindowController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TIBAlertWindowController.xib; sourceTree = "<group>"; };
@@ -164,6 +166,7 @@
 		1F1EFD951A17381900D11FDB /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				1FE961451A1B3E8E00020F00 /* README.md */,
 				1F1EFD961A17381900D11FDB /* Info.plist */,
 			);
 			path = "Supporting Files";
@@ -253,6 +256,7 @@
 			files = (
 				1F246F251A1B194500A0AAB1 /* TIBScripter.m in Sources */,
 				1F3668241A1AF599000062BC /* TIBOnLogin.m in Sources */,
+				1FE961461A1B3E8E00020F00 /* README.md in Sources */,
 				1F1EFD891A17380A00D11FDB /* NSLengthFormatter.m in Sources */,
 				1F246F1F1A1B0CFF00A0AAB1 /* TIBInterfaceWatcher.m in Sources */,
 				1F246F221A1B15D600A0AAB1 /* TIBTransmissionAutoKiller.m in Sources */,

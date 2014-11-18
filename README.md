@@ -7,7 +7,7 @@ This OS X application will allow you to tunnel your Transmission traffic through
 
 **How does this work?**
 
-A device interface of your choice is monitored by the application for changes. If the interface is created, destroyed or altered, its local IP will be retrieved and written into the BindIPV4Address field of the Transmission configuration file. If this happens while Transmission is running, Transmission will be gracefully restarted so to .
+A device interface of your choice is monitored by the application for changes. If the interface is created, destroyed or altered, its local IP will be retrieved and written into the BindIPV4Address field of the Transmission configuration file. If this happens while Transmission is running, Transmission will be gracefully restarted and will then bind to the newly provided IP address.
 
 **I tunnel all of my traffic through my VPN, why should I use this?**
 
@@ -16,6 +16,7 @@ If you attempt to open Transmission while your VPN is not running, a warning mes
 
 **What does it look like when I am not connected to my VPN and I try to open Transmission?**
 
+![alt tag](https://raw.githubusercontent.com/joshbernfeld/Transmission-Interface-Binder/master/Preview/alert.png)
 
 **If I disconnect from my VPN while Transmission is open and seeding will the traffic not go through my VPN?**
 
