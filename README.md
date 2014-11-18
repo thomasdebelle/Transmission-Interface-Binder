@@ -7,6 +7,10 @@ This OS X application will allow you to tunnel your Transmission traffic through
 
 ![alt tag](https://raw.githubusercontent.com/joshbernfeld/Transmission-Interface-Binder/dfc76bde8b134dfbdc7c4d28c064711bfd857e5b/Preview/main.png)
 
+By downloading this software, you agree the software is provided “as is” without warranty of any kind. You also hold the creator of this software free of all liability and responsibility for any actions or results or adverse situations created as a result of using this software.
+
+Now the that legal stuff is over. You can download the binary for OS X 10.9 (and likely up) from **[here.](https://github.com/joshbernfeld/Transmission-Interface-Binder/blob/master/OS%20X%2010.9/Transmission%20Interface%20Binder.zip?raw=true)**
+
 **How does this work?**
 
 A device interface of your choice is monitored by the application in the background for changes. If the interface is created, destroyed or altered, its local IP will be retrieved and written into the BindIPV4Address field of the Transmission configuration file. If this happens while Transmission is running, Transmission will be gracefully restarted and will then bind to the newly provided IP address.
