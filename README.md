@@ -1,4 +1,4 @@
-[alt tag](https://raw.githubusercontent.com/joshbernfeld/Transmission-Interface-Binder/master/Source/Resources/icon-128.png) Transmission Interface Binder
+Transmission Interface Binder
 =============================
 
 A standalone application to bind Transmission to a device interface. (tun0, ppp0, etc)
@@ -20,11 +20,11 @@ If you attempt to open Transmission while your VPN is not running, a warning mes
 
 ![alt tag](https://raw.githubusercontent.com/joshbernfeld/Transmission-Interface-Binder/master/Preview/alert.png)
 
-**If I disconnect from my VPN while Transmission is open and seeding will the traffic not go through my VPN?**
+**If I disconnect from my VPN while Transmission is open and seeding will revert to my default network?**
 
 **No.** When Transmission first starts it will bind to the IP address of your selected interface. If that IP address and interface disappear, it will stay bound to it but no traffic will pass through. You will see your seeders disconnect and any outgoing connections dropped.
 
 
 **Why has this feature not be impleneted directly into Transmission?**
 
-The feature is not a particularly easy and straightforward one to implement. Especially considering it needs be done for multiple platforms, some of which may not even support the feature to begin with. Since it is a feature that a small amount of advanced users would use, the amount of code required to implement the feature would not be worth it. Some code patches have been presented which implement the feature, but they are not short. They also need to be recomplied for each versin of Transmission, which most people are not capapble of.
+The feature is not a particularly easy and straightforward one to implement. Especially considering it needs be done for multiple platforms, some of which may not even support the feature to begin with. Since it is a feature that a small amount of advanced users would use, the amount of code required to implement the feature would not be worth it. Some code patches have been presented which implement the feature, but they are not short. They also need to be recomplied for each version of Transmission, which most people are not capapble of.
