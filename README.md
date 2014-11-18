@@ -1,9 +1,11 @@
-Transmission Interface Binder
+[alt tag](https://raw.githubusercontent.com/joshbernfeld/Transmission-Interface-Binder/master/Source/Resources/icon-128.png) Transmission Interface Binder
 =============================
 
 A standalone application to bind Transmission to a device interface. (tun0, ppp0, etc)
 
 This OS X application will allow you to tunnel your Transmission traffic through an interface of your choice. Transmission falls short because it only offers the ability to bind to the IP adress of an interface, these are dynamic, so every time you reconnect to your VPN this IP will be different.
+
+![alt tag](https://raw.githubusercontent.com/joshbernfeld/Transmission-Interface-Binder/dfc76bde8b134dfbdc7c4d28c064711bfd857e5b/Preview/main.png)
 
 **How does this work?**
 
@@ -23,5 +25,6 @@ If you attempt to open Transmission while your VPN is not running, a warning mes
 **No.** When Transmission first starts it will bind to the IP address of your selected interface. If that IP address and interface disappear, it will stay bound to it but no traffic will pass through. You will see your seeders disconnect and any outgoing connections dropped.
 
 
-Why has this feature not be impleneted directly into Transmission?
-**The feature is not a particularly easy and straightforward one to implement. Especially considering it needs be done for multiple platforms, some of which may not even support the feature to begin with. Since it is a feature that a small amount of advanced users would use, the amount of code required to implement the feature would not be worth it. Some code patches have been presented which implement the feature, but they are not short. They also need to be recomplied for each versin of Transmission, which most people are not capapble of.
+**Why has this feature not be impleneted directly into Transmission?**
+
+The feature is not a particularly easy and straightforward one to implement. Especially considering it needs be done for multiple platforms, some of which may not even support the feature to begin with. Since it is a feature that a small amount of advanced users would use, the amount of code required to implement the feature would not be worth it. Some code patches have been presented which implement the feature, but they are not short. They also need to be recomplied for each versin of Transmission, which most people are not capapble of.
