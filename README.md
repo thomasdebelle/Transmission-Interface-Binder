@@ -3,7 +3,7 @@ Transmission Interface Binder
 
 A standalone application to bind Transmission to a device interface. (tun0, ppp0, etc.)
 
-This OS X application will allow you to tunnel your Transmission traffic through an interface of your choice. Transmission falls short because it only offers the ability to bind to the IP address of an interface, these are dynamic, so every time you reconnect to your VPN this IP will be different.
+This OS X application will allow you to tunnel your Transmission traffic through an interface of your choice. Transmission falls short because it only offers the ability to bind to the IP address of an interface, these are dynamic, so every time you reconnect to your VPN this IP will change.
 
 ![alt tag](https://raw.githubusercontent.com/joshbernfeld/Transmission-Interface-Binder/master/Preview/main.png)
 
@@ -16,7 +16,7 @@ Now the that legal stuff is over. You can download the binary for OS X 10.9 (and
 A device interface of your choice is monitored by the application in the background for changes. If the interface is created, destroyed or altered (IP change), its local IP will be retrieved and written into the BindIPV4Address field of the Transmission configuration file. If this happens while Transmission is running, Transmission will be gracefully restarted and will then bind to the newly provided IP address.
 
 
-**If VPN disconnects while Transmission is open and the Interface Binder is running, will traffic revert to my default network?**
+**If my VPN disconnects while Transmission is open and the Interface Binder is running, will traffic revert to my default network?**
 
 **No.** When Transmission first starts it will bind to the IP address of your selected interface. If that IP address and interface disappear, it will stay bound to it but no traffic will pass through. You will see your seeders disconnect and any outgoing connections dropped.
 
@@ -31,4 +31,4 @@ If you open Transmission while your VPN is disconnected, traffic will travel thr
 
 **Why has this feature not been implemented directly into Transmission?**
 
-The feature is not a particularly easy and straightforward one to implement. Especially considering it needs be done for multiple platforms, some of which may not even support the feature to begin with. Since it is a feature that a small amount of advanced users would use, the amount of code required to implement the feature would not be worth it. Some code patches have been presented which implement the feature, but they are not short. They also need to be recompiled for each version of Transmission, which most people are not capable of.
+The feature is not a particularly easy and straightforward one to implement. Especially considering it needs be done for multiple platforms, some of which may not even support the feature to begin with. Since it is a feature that a small amount of advanced users would use, the amount of code required to implement the feature would not be worth it. Some code patches have been presented which implement the feature, but they are not short. They also need to be recompiled for each version of Transmission, which most people are not capable of doing.
