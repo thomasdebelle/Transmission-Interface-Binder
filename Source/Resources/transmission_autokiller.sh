@@ -9,4 +9,5 @@ if [ $is_running -eq 1 ]; then
         killall Transmission
         break
 fi
+sleep 0.5
 done
