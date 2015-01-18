@@ -365,6 +365,7 @@
 				INFOPLIST_FILE = "Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_NAME = "Transmission Interface Binder";
+				SDKROOT = macosx10.9;
 			};
 			name = Debug;
 		};
@@ -376,6 +377,7 @@
 				INFOPLIST_FILE = "Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_NAME = "Transmission Interface Binder";
+				SDKROOT = macosx10.9;
 			};
 			name = Release;
 		};
