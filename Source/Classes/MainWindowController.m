@@ -7,7 +7,6 @@
 //
 
 #import "MainWindowController.h"
-#import "NSLengthFormatter.h"
 #import "TIBAlertWindowController.h"
 #import "TIBOnLogin.h"
 #import "TIBInterfaceWatcher.h"

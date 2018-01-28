@@ -14,7 +14,6 @@
 		1F1EFD851A17380A00D11FDB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F1EFD7B1A17380A00D11FDB /* main.m */; };
 		1F1EFD861A17380A00D11FDB /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1F1EFD7C1A17380A00D11FDB /* MainMenu.xib */; };
 		1F1EFD881A17380A00D11FDB /* MainWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F1EFD801A17380A00D11FDB /* MainWindowController.m */; };
-		1F1EFD891A17380A00D11FDB /* NSLengthFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F1EFD821A17380A00D11FDB /* NSLengthFormatter.m */; };
 		1F1EFD901A17381100D11FDB /* bash_get_ip.sh in Resources */ = {isa = PBXBuildFile; fileRef = 1F1EFD8B1A17381100D11FDB /* bash_get_ip.sh */; };
 		1F1EFD911A17381100D11FDB /* bash_restart_transmission.sh in Resources */ = {isa = PBXBuildFile; fileRef = 1F1EFD8C1A17381100D11FDB /* bash_restart_transmission.sh */; };
 		1F1EFD921A17381100D11FDB /* bash_write_ip.sh in Resources */ = {isa = PBXBuildFile; fileRef = 1F1EFD8D1A17381100D11FDB /* bash_write_ip.sh */; };
@@ -47,8 +46,6 @@
 		1F1EFD7C1A17380A00D11FDB /* MainMenu.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainMenu.xib; sourceTree = "<group>"; };
 		1F1EFD7F1A17380A00D11FDB /* MainWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainWindowController.h; sourceTree = "<group>"; };
 		1F1EFD801A17380A00D11FDB /* MainWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainWindowController.m; sourceTree = "<group>"; };
-		1F1EFD811A17380A00D11FDB /* NSLengthFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSLengthFormatter.h; sourceTree = "<group>"; };
-		1F1EFD821A17380A00D11FDB /* NSLengthFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSLengthFormatter.m; sourceTree = "<group>"; };
 		1F1EFD8B1A17381100D11FDB /* bash_get_ip.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = bash_get_ip.sh; sourceTree = "<group>"; };
 		1F1EFD8C1A17381100D11FDB /* bash_restart_transmission.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = bash_restart_transmission.sh; sourceTree = "<group>"; };
 		1F1EFD8D1A17381100D11FDB /* bash_write_ip.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = bash_write_ip.sh; sourceTree = "<group>"; };
@@ -138,8 +135,6 @@
 				1F3668231A1AF599000062BC /* TIBOnLogin.m */,
 				1F246F231A1B194500A0AAB1 /* TIBScripter.h */,
 				1F246F241A1B194500A0AAB1 /* TIBScripter.m */,
-				1F1EFD811A17380A00D11FDB /* NSLengthFormatter.h */,
-				1F1EFD821A17380A00D11FDB /* NSLengthFormatter.m */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -257,7 +252,6 @@
 				1F246F251A1B194500A0AAB1 /* TIBScripter.m in Sources */,
 				1F3668241A1AF599000062BC /* TIBOnLogin.m in Sources */,
 				1FE961461A1B3E8E00020F00 /* README.md in Sources */,
-				1F1EFD891A17380A00D11FDB /* NSLengthFormatter.m in Sources */,
 				1F246F1F1A1B0CFF00A0AAB1 /* TIBInterfaceWatcher.m in Sources */,
 				1F246F221A1B15D600A0AAB1 /* TIBTransmissionAutoKiller.m in Sources */,
 				1F1EFD851A17380A00D11FDB /* main.m in Sources */,
@@ -365,7 +359,7 @@
 				INFOPLIST_FILE = "Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_NAME = "Transmission Interface Binder";
-				SDKROOT = macosx10.9;
+				SDKROOT = macosx;
 			};
 			name = Debug;
 		};
@@ -377,7 +371,7 @@
 				INFOPLIST_FILE = "Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_NAME = "Transmission Interface Binder";
-				SDKROOT = macosx10.9;
+				SDKROOT = macosx;
 			};
 			name = Release;
 		};
