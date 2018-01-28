@@ -14,6 +14,8 @@
 #import "TIBScripter.h"
 
 #define kTIBDefaultsBindToInterfaceKey @"BindToInterface"
+#define kTIBDefaultsSaveBindToStateInterfaceKey @"SaveBindToState"
+#define kTIBDefaultsBindStateInterfaceKey @"BindState"
 
 @interface MainWindowController() <NSTextFieldDelegate>
 
@@ -40,7 +42,8 @@
 @property (nonatomic, readwrite) BOOL updateInterface;
 @property (nonatomic, readwrite) BOOL updateIP;
 
-@property (nonatomic, strong) IBOutlet NSButton *checkBoxButton;
+@property (nonatomic, strong) IBOutlet NSButton *saveBindStateCheckBoxButton;
+@property (nonatomic, strong) IBOutlet NSButton *startOnLoginCheckBoxButton;
 
 @property (nonatomic, strong) dispatch_queue_t backgroundQueue;
 
@@ -123,15 +126,21 @@
     [self.interfaceField setCell:cell2];
     [self.interfaceField setNeedsDisplay];
     
-    if ([TIBOnLogin startOnLoginSet]) {
-        if ([TIBOnLogin doesStartOnLogin])
-            [self.checkBoxButton setState:NSOnState];
-        else
-            [self.checkBoxButton setState:NSOffState];
+    if ([[NSUserDefaults standardUserDefaults] boolForKey:kTIBDefaultsSaveBindToStateInterfaceKey]) {
+        [self.saveBindStateCheckBoxButton setState:NSOnState];
+        [self activationButtonPressed:nil];
+    } else {
+        [self.saveBindStateCheckBoxButton setState:NSOffState];
     }
-    else {//Set start on login for the first time to on, because it hasnt been set in the past.
+    if ([TIBOnLogin startOnLoginSet]) {
+        if ([TIBOnLogin doesStartOnLogin]) {
+            [self.startOnLoginCheckBoxButton setState:NSOnState];
+        } else {
+            [self.startOnLoginCheckBoxButton setState:NSOffState];
+        }
+    } else { //Set start on login for the first time to on, because it hasnt been set in the past.
         [TIBOnLogin setStartOnLogin:YES];
-        [self.checkBoxButton setState:NSOnState];
+        [self.startOnLoginCheckBoxButton setState:NSOnState];
     }
 }
 
@@ -253,22 +262,23 @@
 - (IBAction)activationButtonPressed:(id)sender {
     if (self.interfaceWatcher.isRunning) {
         //If the set interface differs from a previously set interface, the user has requested an updated of interface.
-        if(self.updateInterface){//Start
+        if (self.updateInterface) { //Start
             [self setActivationButtonMessage:@"Stop"];
+            [[NSUserDefaults standardUserDefaults] setBool:YES forKey:kTIBDefaultsBindStateInterfaceKey];
             
             [self runUpdate];
-        }
-        else {//Stop
+        } else { //Stop
             [self setActivationButtonMessage:@"Start"];
+            [[NSUserDefaults standardUserDefaults] setBool:NO forKey:kTIBDefaultsBindStateInterfaceKey];
             
             [self.interfaceWatcher stop];
             [self.autoKiller stop];
             [self displayStatusMessage:@"Press Start to begin interface binding."];
         }
         
-    }
-    else {//Start
+    } else { //Start
         [self setActivationButtonMessage:@"Stop"];
+        [[NSUserDefaults standardUserDefaults] setBool:YES forKey:kTIBDefaultsBindStateInterfaceKey];
         
         [self.interfaceWatcher startWithInterface:self.interface];
         [self runUpdate];
@@ -290,17 +300,30 @@
     [NSApp performSelector:@selector(terminate:) withObject:nil afterDelay:0.0];
 }
 
-- (IBAction)startAtLoginButtonPressed:(id)sender {
+#pragma mark - Checkbox Actions
+
+- (IBAction)saveBindStateButtonPressed:(id)sender
+{
+    if ([sender state] == NSOnState) {
+        [[NSUserDefaults standardUserDefaults] setBool:YES forKey:kTIBDefaultsSaveBindToStateInterfaceKey];
+    } else {
+        [[NSUserDefaults standardUserDefaults] setBool:NO forKey:kTIBDefaultsSaveBindToStateInterfaceKey];
+    }
+}
+
+- (IBAction)startAtLoginButtonPressed:(id)sender
+{
     if ([sender state] == NSOnState) {
         [TIBOnLogin setStartOnLogin:YES completion:^(BOOL success) {
             if (!success)
-                [self.checkBoxButton setState:NSOffState];
+                [self.startOnLoginCheckBoxButton setState:NSOffState];
         }];
-    }
-    else {
+    } else {
         [TIBOnLogin setStartOnLogin:NO];
     }
 }
+
+#pragma mark - Warnings and Messages
 
 - (void)showTransmissionOpenWarning {
     NSLog(@"Show Transmission Open Warning");
